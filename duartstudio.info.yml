@@ -1,0 +1,27 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'duART Studio'
+description: 'duART Studio - Bootstrap theme.'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  hero: 'Hero'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  bottom1: 'Bottom Content 1'
+  bottom2: 'Bottom Content 2'
+  bottom3: 'Bottom Content 3'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - 'duartstudio/global-styling'
