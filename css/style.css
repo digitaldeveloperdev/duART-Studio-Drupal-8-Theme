@@ -276,6 +276,10 @@ pre {
     padding-bottom: 20px;
 }
 
+div#views-bootstrap-last-blog-frontpage-block-1 {
+    line-height: normal;
+}
+
 /* Blocks CSS */
 
 .image_block .img-thumbnail, .image_block {
