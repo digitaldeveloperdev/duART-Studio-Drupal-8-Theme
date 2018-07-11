@@ -1,7 +1,7 @@
 /**
- * Place your custom styles here.
+ * duART Studio CSS.
  */
- 
+
 /* Admin toolbar CSS */
 
 .toolbar-oriented .toolbar-bar {
@@ -19,8 +19,8 @@ body {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    
-    line-height: inherit;   
+
+    line-height: inherit;
 }
 
 /* Modal CSS */
@@ -37,7 +37,7 @@ body {
 
 .fa {
     font-family: "FontAwesome", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}  
+}
 
 .page-header {
     border-bottom: none;
@@ -54,10 +54,10 @@ a.logo.navbar-btn.pull-left img {
     }
 }
 
-/*navbar collapse point */
+/* navbar collapse point */
 
 @media (max-width: 992px) {
-    
+
     .navbar-header {
         float: none;
     }
@@ -92,7 +92,7 @@ a.logo.navbar-btn.pull-left img {
     .collapse.in{
         display:block !important;
     }
-    
+
 }
 
 /* navbar css */
@@ -134,7 +134,7 @@ a.logo.navbar-btn.pull-left img {
     .dropdown-menu li a {
         text-align: center;
         background-color: #fff;
-    } 
+    }
 
     .navbar-nav .open .dropdown-menu {
     position: static;
@@ -284,10 +284,10 @@ div#views-bootstrap-last-blog-frontpage-block-1 {
 
 .image_block .img-thumbnail, .image_block {
     text-align: center;
-    
+
 }
 
-.region.region-sidebar-second .img-thumbnail, 
+.region.region-sidebar-second .img-thumbnail,
 .view-last-blog-frontpage .img-thumbnail,
 .slick img {
     border: none;
@@ -327,15 +327,15 @@ figcaption {
     padding-top: 10px
 }
 
-.align-center {  
+.align-center {
     text-align: center;
 }
 
 /* Views CSS */
 
-.view-videos-duarte-cancela .img-thumbnail:hover, 
-.view-imagens-duarte-cancela .img-thumbnail:hover, 
-.view-blog-duart-studio .img-thumbnail:hover, 
+.view-videos-duarte-cancela .img-thumbnail:hover,
+.view-imagens-duarte-cancela .img-thumbnail:hover,
+.view-blog-duart-studio .img-thumbnail:hover,
 .view-last-blog-frontpage .img-thumbnail:hover {
     opacity: 0.8;
     transition: 0.5s ease;
@@ -394,7 +394,7 @@ figcaption {
 .paragraph.paragraph--type--bp-columns .paragraph--type--bp-columns__2col {
     padding-left: 30px;
     padding-right: 0px;
-} 
+}
 
 /* Slick Carosel */
 
@@ -449,8 +449,7 @@ figcaption {
 }
 
 /* back to Top */
-#backtotop { 
+#backtotop {
     right: 5px;
     background-size: 50px;
 }
-
