@@ -40,34 +40,33 @@
 #}
 
 
-    {% if label_hidden %}
-      {% if multiple %}
-        <div{{ attributes }}>
-          {% for item in items %}
-            <div{{ item.attributes }}>{{ item.content }}</div>
-          {% endfor %}
-        </div>
-      {% else %}
+  {% if label_hidden %}
+  {% if multiple %}
+    <div{{ attributes }}>
+      {% for item in items %}
+        <div{{ item.attributes }}>{{ item.content }}</div>
+      {% endfor %}
+    </div>
+  {% else %}
+    {% for item in items %}
+      <div{{ attributes }}>{{ item.content }}</div>
+    {% endfor %}
+  {% endif %}
+{% else %}
+  <div{{ attributes }}>
+
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <div{{ title_attributes }}>
+          <strong>{{ label }}</strong>:</div>
+        {% if multiple %}{% endif %}
         {% for item in items %}
-          <div{{ attributes }}>{{ item.content }}</div>
+        </li>
+        <li class="list-inline-item">
+          <div{{ item.attributes }}><a class="badge" {{ item.content }} </a></div>
         {% endfor %}
-      {% endif %}
-    {% else %}
-      <div{{ attributes }}>
-        
-        <ul class="list-inline">
-          <li class="list-inline-item"><div{{ title_attributes }}><strong>{{ label }}</strong>:</div>
-          {% if multiple %}
-          {% endif %}
-          {% for item in items %}
-          </li>
-          <li class="list-inline-item"><div{{ item.attributes }}><a class="badge"{{ item.content }}</a></div>
-          {% endfor %}
-          {% if multiple %}
-          {% endif %}
-          </li>
-        </ul>
-      </div>
-    {% endif %}
-
-
+        {% if multiple %}{% endif %}
+      </li>
+    </ul>
+  </div>
+{% endif %}
