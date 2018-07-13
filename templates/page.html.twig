@@ -65,43 +65,42 @@
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
-      {% endif %}
-      <div class="navbar-header">
-        {{ page.navigation }}
-        {# .btn-navbar is used as the toggle for collapsed navbar content #}
+        {% endif %}
+        <div class="navbar-header">
+          {{ page.navigation }}
+          {# .btn-navbar is used as the toggle for collapsed navbar content #}
+          {% if page.navigation_collapsible %}
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          {% endif %}
+        </div>
+
+        {# Navigation (collapsible) #}
         {% if page.navigation_collapsible %}
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            {{ page.navigation_collapsible }}
+          </div>
         {% endif %}
       </div>
-
-      {# Navigation (collapsible) #} 
-      {% if page.navigation_collapsible %}
-        <div id="navbar-collapse" class="navbar-collapse collapse">
-          {{ page.navigation_collapsible }}
-        </div>
-      {% endif %}
-      </div>
-      {% if not navbar_attributes.hasClass(container) %}
-      {% endif %}
+      {% if not navbar_attributes.hasClass(container) %}{% endif %}
     </header>
   {% endblock %}
 {% endif %}
 
 {# Hero #}
-<div class="hero_back"> 
-      {% if page.hero %}
-        {% block hero %}
-          <div class="hero {{ container }}" role="contentinfo">
-            {{ page.hero }}
-          </div>
-        {% endblock %}
-      {% endif %}
-</div>  
+<div class="hero_back">
+  {% if page.hero %}
+    {% block hero %}
+      <div class="hero {{ container }}" role="contentinfo">
+        {{ page.hero }}
+      </div>
+    {% endblock %}
+  {% endif %}
+</div>
 
 {# Main #}
 {% block main %}
@@ -157,7 +156,7 @@
           {{ page.content }}
         {% endblock %}
       </section>
-      
+
       {# Sidebar Second #}
       {% if page.sidebar_second %}
         {% block sidebar_second %}
@@ -171,32 +170,32 @@
 {% endblock %}
 
 {# Bottom Content 1,2 and 3#}
-<div class="bg-info"> 
- <div class="container bottom_content">
-   <div class="row">
-     <div class="col-sm-4">
-       {% if page.bottom1 %}
-        {% block bottom1 %}
-        {{ page.bottom1 }}          
-        {% endblock %}
-      {% endif %}
-     </div>
-     <div class="col-sm-4">
-       {% if page.bottom2 %}
-        {% block bottom2 %}
-        {{ page.bottom2 }}
-        {% endblock %}
-      {% endif %}
-     </div>
-     <div class="col-sm-4">
-       {% if page.bottom3 %}
-        {% block bottom3 %}
-        {{ page.bottom3 }} 
-        {% endblock %}
-      {% endif %}
-     </div>
-   </div>
- </div>
+<div class="bg-info">
+  <div class="container bottom_content">
+    <div class="row">
+      <div class="col-sm-4">
+        {% if page.bottom1 %}
+          {% block bottom1 %}
+            {{ page.bottom1 }}
+          {% endblock %}
+        {% endif %}
+      </div>
+      <div class="col-sm-4">
+        {% if page.bottom2 %}
+          {% block bottom2 %}
+            {{ page.bottom2 }}
+          {% endblock %}
+        {% endif %}
+      </div>
+      <div class="col-sm-4">
+        {% if page.bottom3 %}
+          {% block bottom3 %}
+            {{ page.bottom3 }}
+          {% endblock %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>
 {% if page.footer %}
   {% block footer %}

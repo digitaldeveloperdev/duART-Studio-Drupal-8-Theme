@@ -51,9 +51,6 @@
   <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 </button>
 
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="search" tabindex="-1" role="dialog" aria-labelledby="searchLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -65,7 +62,7 @@
         </button>
       </div>
       <div class="modal-body">
-    {%
+        {%
     set classes = [
       'block',
       'block-' ~ configuration.provider|clean_class,
@@ -73,20 +70,18 @@
       'clearfix',
     ]
     %}
-    <section{{ attributes.addClass(classes) }}>
-    {{ title_prefix }}
-    {% if label %}
-      <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
-    {% endif %}
-    {{ title_suffix }}
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-</section>
+        <section{{ attributes.addClass(classes) }}>
+          {{ title_prefix }}
+          {% if label %}
+            <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+          {% endif %}
+          {{ title_suffix }}
+          {% block content %}
+            {{ content }}
+          {% endblock %}
+        </section>
       </div>
-      <div class="modal-footer">
-      </div>
+      <div class="modal-footer"></div>
     </div>
   </div>
 </div>
-

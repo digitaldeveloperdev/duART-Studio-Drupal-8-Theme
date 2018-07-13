@@ -3,11 +3,13 @@
  */
 
 /* Admin toolbar CSS */
+
 .toolbar-oriented .toolbar-bar {
   z-index: 10000;
 }
 
 /* Body CSS */
+
 a:link {
   text-decoration: none;
 }
@@ -21,6 +23,7 @@ body {
 }
 
 /* Modal CSS */
+
 .modal-backdrop.fade.in {
   z-index: 1;
 }
@@ -30,6 +33,7 @@ body {
 }
 
 /* Header CSS */
+
 .fa {
   font-family: "FontAwesome", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -90,6 +94,7 @@ a.logo.navbar-btn.pull-left img {
 }
 
 /* navbar css */
+
 .navbar-default {
   border: none;
 }
@@ -189,6 +194,7 @@ a.logo.navbar-btn.pull-left img {
 }
 
 /* Content CSS */
+
 .region.region-content {
   padding-bottom: 20px;
 }
@@ -253,6 +259,7 @@ pre {
 }
 
 /* Sidebar CSS */
+
 @media (max-width: 992px) {
   .region.region-sidebar-second {
     padding-top: 20px;
@@ -269,6 +276,7 @@ div#views-bootstrap-last-blog-frontpage-block-1 {
 }
 
 /* Blocks CSS */
+
 .image_block .img-thumbnail, .image_block {
   text-align: center;
 }
@@ -286,6 +294,7 @@ div#views-bootstrap-last-blog-frontpage-block-1 {
 }
 
 /* CKEDITOR CSS */
+
 .embedded-entity.align-left {
   margin-right: 15px;
   margin-left: 0;
@@ -315,6 +324,7 @@ figcaption {
 }
 
 /* Views CSS */
+
 .view-videos-duarte-cancela .img-thumbnail:hover, .view-imagens-duarte-cancela .img-thumbnail:hover, .view-blog-duart-studio .img-thumbnail:hover, .view-last-blog-frontpage .img-thumbnail:hover {
   opacity: 0.8;
   transition: 0.5s ease;
@@ -333,6 +343,7 @@ figcaption {
 }
 
 /* Footer CSS */
+
 .container.bottom_content {
   padding-bottom: 20px;
 }
@@ -343,6 +354,7 @@ figcaption {
 }
 
 /* Align center maintenance page content */
+
 .maintenace {
   position: relative;
 }
@@ -359,6 +371,7 @@ figcaption {
 }
 
 /* Paragraph CSS */
+
 .paragraph.paragraph--type--bp-columns, .paragraph__column {
   padding-left: 0px;
   padding-right: 0px;
@@ -372,6 +385,7 @@ figcaption {
 }
 
 /* Slick Carosel */
+
 .slick img {
   border: none;
   padding: 0;
@@ -417,11 +431,13 @@ figcaption {
 }
 
 /* Mailchimp */
+
 #block-mailchimpvertical input.email {
   width: 90% !important;
 }
 
 /* back to Top */
+
 #backtotop {
   right: 5px;
   background-size: 50px;
